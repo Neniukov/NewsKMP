@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="posted">posted: %s</string>
+    <string name="read_time">%d min</string>
+    <string name="more">View more</string>
+    <string name="dots">…</string>
+    <string name="search">Search…</string>
+    <string name="all_news">All News</string>
+    <string name="empty_list">Oops…\nWe didn't find an article for you.</string>
+</resources>

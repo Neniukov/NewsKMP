@@ -1,0 +1,55 @@
+CREATE TABLE Article (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    desc TEXT,
+    date TEXT NOT NULL,
+    imageUrl TEXT,
+    content TEXT,
+    author TEXT,
+    source TEXT,
+    url TEXT,
+    isSearch INTEGER
+);
+
+insertArticle:
+INSERT INTO Article (id, title, desc, date, imageUrl, content, author, source, url, isSearch)
+VALUES (?, ?, ?, ?, ?, ?, ? , ?, ?, ?);
+
+selectAllArticles:
+SELECT Article.*
+FROM Article;
+
+selectSearchedArticles:
+SELECT Article.*
+FROM Article
+WHERE isSearch = 1;
+
+removeAllArticles:
+DELETE FROM Article;
+
+selectArticleById:
+SELECT * FROM Article
+WHERE id = ?;
+
+removeSearchedArticles:
+DELETE FROM Article
+WHERE isSearch = 1;
+
+
+
+
+CREATE TABLE Sources (
+    id TEXT,
+    name TEXT
+);
+
+inseartSource:
+INSERT INTO Sources (id, name)
+VALUES (?, ?);
+
+selectAllSources:
+SELECT Sources.*
+FROM Sources;
+
+removeAllSources:
+DELETE FROM Sources;
