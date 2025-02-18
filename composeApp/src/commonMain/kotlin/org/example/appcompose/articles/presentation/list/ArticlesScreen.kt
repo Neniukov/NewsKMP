@@ -1,4 +1,4 @@
-package org.example.appcompose.articles.presentation.list.ui
+package org.example.appcompose.articles.presentation.list
 
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.fadeIn
@@ -22,7 +22,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
-import org.example.appcompose.articles.presentation.list.ArticlesViewModel
+import org.example.appcompose.articles.presentation.list.ui.AppBar
+import org.example.appcompose.articles.presentation.list.ui.ArticlesListView
+import org.example.appcompose.articles.presentation.list.ui.EmptyListView
+import org.example.appcompose.articles.presentation.list.ui.SearchProgressBar
+import org.example.appcompose.articles.presentation.list.ui.SourcesList
 import org.example.appcompose.common.ui.ErrorMessage
 import org.example.appcompose.common.ui.Loader
 import org.koin.compose.viewmodel.koinViewModel

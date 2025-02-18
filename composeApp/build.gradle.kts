@@ -63,6 +63,7 @@ kotlin {
             implementation(libs.sql.coroutines.extensions)
             implementation(libs.coil.compose)
             implementation(libs.compose.material3)
+            implementation(libs.navigation.compose)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
